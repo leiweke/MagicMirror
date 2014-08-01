@@ -297,8 +297,8 @@ jQuery(document).ready(function($) {
 
 	(function fetchNews() {
 		$.feedToJson({
-			feed:'http://feeds.nos.nl/nosjournaal?format=rss',
-			//feed:'http://www.nu.nl/feeds/rss/achterklap.rss',
+			//feed:'http://feeds.nos.nl/nosjournaal?format=rss',
+			feed:'http://www.n-tv.de/rss',
 			//feed:'http://www.nu.nl/feeds/rss/opmerkelijk.rss',
 			success: function(data){
 				news = [];
