@@ -5,14 +5,14 @@ var lang = window.navigator.language;
 
 //change weather params here:
 var weatherParams = {
-    'q':'Baarn,Netherlands',
+    'q':'Hemer,Germany',
     'units':'metric',
     'lang':lang
 };
 
 // compliments:
 var compliments = [
-            'Hey, handsome!',
+            'Hallo, Sebastian!',
             'Hi, sexy!',
             'Hello, beauty!',
             'You look sexy!',
