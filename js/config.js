@@ -13,11 +13,11 @@ var weatherParams = {
 // compliments:
 var compliments = [
             'Hallo, Sebastian!',
-            'Hi, sexy!',
-            'Hello, beauty!',
-            'You look sexy!',
-            'Wow, you look hot!',
-            'Looking good today!',
-            'You look nice!',
-            'Enjoy your day!'
+            'Hallo, Klaudia!',
+            //'Hello, beauty!',
+            //'You look sexy!',
+            //'Wow, you look hot!',
+            //'Looking good today!',
+            //'You look nice!',
+            //'Enjoy your day!'
         ];
