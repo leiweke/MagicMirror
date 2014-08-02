@@ -226,8 +226,8 @@ jQuery(document).ready(function($) {
 			var icon = $('<span/>').addClass('icon').addClass('dimmed').addClass('wi').addClass(iconClass);
 			$('.temp').updateWithText(icon.outerHTML()+temp+'&deg;', 1000);
 
-			var forecast = 'Min: '+temp_min+'&deg;, Max: '+temp_max+'&deg;';
-			$('.forecast').updateWithText(forecast, 1000);
+			//var forecast = 'Min: '+temp_min+'&deg;, Max: '+temp_max+'&deg;';
+			//$('.forecast').updateWithText(forecast, 1000);
 
 			var now = new Date();
 			var sunrise = new Date(json.sys.sunrise*1000).toTimeString().substring(0,5);
