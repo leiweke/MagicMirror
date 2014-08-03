@@ -223,7 +223,7 @@ jQuery(document).ready(function($) {
 			var wind = roundVal(json.wind.speed);
 
 			var iconClass = iconTable[json.weather[0].icon];
-			var icon = $('<span/>').addClass('icon').addClass('dimmed').addClass('wi').addClass(iconClass);
+			var icon = $('<span/>').addClass('icon').addClass('dimm').addClass('wi').addClass(iconClass);
 			$('.temp').updateWithText(icon.outerHTML()+temp+'&deg;', 1000);
 
 			//var forecast = 'Min: '+temp_min+'&deg;, Max: '+temp_max+'&deg;';
@@ -233,10 +233,10 @@ jQuery(document).ready(function($) {
 			var sunrise = new Date(json.sys.sunrise*1000).toTimeString().substring(0,5);
 			var sunset = new Date(json.sys.sunset*1000).toTimeString().substring(0,5);
 
-			var windString = '<span class="wi wi-strong-wind xdimmed"></span> ' + kmh2beaufort(wind) ;
-			var sunString = '<span class="wi wi-sunrise xdimmed"></span> ' + sunrise;
+			var windString = '<span class="wi wi-strong-wind xdimm"></span> ' + kmh2beaufort(wind) ;
+			var sunString = '<span class="wi wi-sunrise xdimm"></span> ' + sunrise;
 			if (json.sys.sunrise*1000 < now && json.sys.sunset*1000 > now) {
-				sunString = '<span class="wi wi-sunset xdimmed"></span> ' + sunset;
+				sunString = '<span class="wi wi-sunset xdimm"></span> ' + sunset;
 			}
 
 			$('.windsun').updateWithText(windString+' '+sunString, 1000);
